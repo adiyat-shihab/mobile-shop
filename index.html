@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="relative">
+        <div class="ml-40 my-10">
+          <input
+            type="text"
+            placeholder="Search..."
+            class="input input-bordered w-full max-w-xs inputValue"
+          />
+          <button class="btn btn-neutral button">Search</button>
+        </div>
+        <div class="absolute top-[27.25rem] left-[44rem]">
+          <span
+            class="loading loading-dots loading-lg text-blue-400 hidden"
+          ></span>
+        </div>
+        <div class="product-container grid grid-cols-3"></div>
+
+        <div class="border border-white">
+          <button
+            class="btn btn-primary hidden btn-local ml-[500px]"
+            onclick="buttonShowAll()"
+          >
+            Show All
+          </button>
+          <!-- Open the modal using ID.showModal() method -->
+
+          <dialog
+            id="my_modal_5"
+            class="modal modal-bottom sm:modal-middle"
+          ></dialog>
+        </div>
+      </section>
+    </main>
+    <script src="js/json.js"></script>
+  </body>
+</html>
